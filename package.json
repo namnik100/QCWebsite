@@ -1,0 +1,26 @@
+{
+  "name": "qcwebsite",
+  "version": "1.0.0",
+  "description": "QC Club Website",
+  "main": "script.js",
+  "scripts": {
+    "test": "index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/namnik100/QCWebsite.git"
+  },
+  "keywords": [
+    "quantum",
+    "computing",
+    "club",
+    "ahs",
+    "club"
+  ],
+  "author": "Nikhil Sinha",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/namnik100/QCWebsite/"
+  },
+  "homepage": "https://github.com/namnik100/QCWebsite#readme"
+}
