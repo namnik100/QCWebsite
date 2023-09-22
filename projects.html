@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Quantum Computing Club</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        /* Additional CSS for project boxes */
+        .projects-section {
+            background-color: #24608fb8; /* Background color */
+            padding: 20px; /* Padding for the section */
+        }
+
+        .project-box {
+            display: flex;
+            margin-bottom: 20px;
+            background-color: rgba(7, 49, 60, 0.577); /* Background color for each project box */
+            border: 1px solid rgba(7,49,60,0.577);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .project-image {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%; /* Circular image */
+        }
+
+        .project-details {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .project-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0;
+            color: rgb(34, 34, 34);
+        }
+
+        .project-date {
+            font-size: 14px;
+            color: rgb(52, 51, 51);
+            margin-top: 5px;
+        }
+
+        .project-description {
+            margin-top: 10px;
+            font-size: 14px;
+            color: rgb(26, 39, 38);
+        }
+    </style>
+</head>
+<body>
+    <nav class="site-navigation">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Projects</h1>
+            <!-- Add your projects information here -->
+        </div>
+    </header>
+
+    <main>
+        <section id="projects" class="projects-section">
+            <!-- Sample project boxes -->
+            <div class="project-box">
+                <img class="project-image" src="opencatalyst .jpeg" alt="Project 1">
+                <div class="project-details">
+                    <h2 class="project-name">Open Catalyst Project</h2>
+                    <p class="project-date">Date: TBA</p>
+                    <p class="project-description">Open Catalyst Project is an open-source project to solve renewable energy storage problems using quantum mechanics. The project is a collaborative research effort between Facebook AI Research (FAIR) and Carnegie Mellon University’s (CMU) Department of Chemical Engineering. The main goal of this project is to use AI and quantum computing to model and discover new catalysts for use in renewable energy storage to help address climate change. The developers have released the Open Catalyst Dataset for training ML models to enable the research community to participate in this project. The dataset contains 1.2 million molecular relaxations with results from over 250 million DFT calculations. </p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img class="project-image" src="grovercollision.jpeg" alt="Project 2">
+                <div class="project-details">
+                    <h2 class="project-name">Grover's Algorithm for Collision Problem</h2>
+                    <p class="project-date">Date: TBA</p>
+                    <p class="project-description">Given an unsorted list of N items, find whether there are any duplicates in the list, and if so, identify their locations.
+                        In other words, the collision problem seeks to determine whether there are two or more identical items in a list and, if they exist, to pinpoint their positions in the list.
+                        </p>
+                </div>
+            </div>
+
+            <div class="project-box">
+                <img class="project-image" src="shorsalgorithm.jpeg" alt="Project 3">
+                <div class="project-details">
+                    <h2 class="project-name">Shor's Algorithm in Cryptography</h2>
+                    <p class="project-date">Date: TBA</p>
+                    <p class="project-description"> Shor's algorithm is a quantum algorithm with the potential to break widely used cryptographic systems that rely on the hardness of factoring large numbers. As quantum computing technology advances, the importance of developing and transitioning to post-quantum cryptographic schemes becomes increasingly critical to maintaining the security of sensitive data and communications.</p>
+                </div>
+            </div>
+            <!-- Add more project boxes as needed -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Quantum Computing Club</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

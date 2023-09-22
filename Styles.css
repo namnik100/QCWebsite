@@ -1,0 +1,302 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background and text colors */
+body {
+    background-color: #7199d5; /* Light gray background */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Header styles */
+.hero {
+    background-image: url('hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    padding-bottom: 2%;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Navigation menu styles */
+.site-navigation {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Set your desired background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow effect */
+    z-index: 1000; /* Adjust the z-index to make sure it's above other content */
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #FF6B6B; /* Hover color - Coral */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #333;
+    text-align: center;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.nav-list li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #5c4fda; /* Hover color - Coral */
+}
+
+/* Main content styles */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.541);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}   
+
+/* Section styles */
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+/* Event calendar styles */
+.event-calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.events-section {
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.event {
+    width: 55%; /* Adjust the width as needed */
+    border: 1px solid rgb(73, 146, 133);
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(73, 146, 133, 0.447);
+    display: flex;
+    align-items: center;
+}
+
+.event-date {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-month {
+    font-size: 1.2em;
+}
+
+.event-day {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.event-details {
+    flex-grow: 1; /* Allows the details to expand and take up remaining space */
+}
+
+.event:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .event {
+        width: 100%; /* One event per row on smaller screens */
+    }
+}
+.footer{
+    text-align: center;
+}
+/* Style the search bar */
+.search-section {
+    text-align: center;
+    margin-top: 50px;
+    bottom: 20px;
+    position: relative; /* Ensure the dropdown is positioned relative to the search bar */
+}
+
+#searchInput {
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(15, 35, 43, 0.273);
+    border: 1px solid rgb(15, 35, 43, 0.273);
+}
+
+/* Style the search results dropdown */
+.search-dropdown {
+    position: absolute;
+    width: 30%; /* Change the width to 50% */
+    max-height: 200px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1;
+    left: 50%; /* Center the dropdown horizontally */
+    top: 60px; /* Adjust the top position as needed */
+    transform: translateX(-50%); /* Center the dropdown horizontally */
+}
+
+/* Style individual search result items */
+.search-result-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-result-item:last-child {
+    border-bottom: none; /* Remove the border on the last item */
+}
+#searchInput::placeholder {
+    font-size: large;
+    color: rgb(0, 0, 0); /* You can change this color to your preferred color */
+}
+.faq-section{
+    text-align: center;
+}
+.about-section {
+    margin-bottom: 20px; /* Adds space below the "About Us" section */
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.faq-section {
+    margin-top: 5px; /* Adds space above the "FAQs" section */
+}
+/* Styling for the "Coming Soon" section */
+.coming-soon {
+    text-align: center;
+    padding: 50px;
+    background-color: #c93e3e82;
+}
+
+.coming-soon h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    font-family:'Courier New', Courier, monospace ;
+}
+
+.coming-soon p {
+    font-size: 1.5em;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #333;
+}
+
+        /* Additional CSS for team members */
+        .team-members {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .team-member {
+            width: calc(50% - 10px); /* Two members per row with spacing */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .team-member-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Create circular shape */
+            background-color: rgba(176, 37, 37, 0.662); /* Placeholder background color */
+            margin: 0 auto 10px;
+        }
+
+        .team-member h2 {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        .team-member p {
+            font-size: 14px;
+            color: #666;
+        }
+.question{
+    font-style: italic;
+    text-align: left;
+    margin-top: 2%;
+    margin-bottom: 0%;
+}
+.answer{
+    text-align: left;
+}
+.qc-picture{
+    width: 300px; /* Set your desired width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin-top: 0%;
+
+}
+.resources-section{
+    text-align: center;
+    font-size: 1.40em;
+}

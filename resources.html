@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Quantum Computing Club</title>
+    <link rel="stylesheet" href="Styles.css">
+    <style>
+        /* Style for the sidebar container */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333;
+            padding-top: 20px;
+        }
+
+        /* Style for the sidebar links */
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /* Hover effect for sidebar links */
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Style for the dropdown items */
+        .dropdown-item {
+            padding-left: 30px;
+        }
+        .sidebar-title{
+            color: #fff;
+            padding-left: 15px;
+            padding-top: 20px;
+        }
+
+        /* Style for the nested dropdown menu */
+        .dropdown-content {
+            display: none;
+            background-color: #444;
+        }
+
+        /* Style for the nested dropdown items */
+        .dropdown-content a {
+            padding-left: 45px;
+        }
+
+        /* Show the nested dropdown menu when hovering over the dropdown item */
+        .dropdown-item:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Style for the main content area to push it to the right */
+        .content {
+            margin-left: 250px; /* Width of the sidebar */
+            padding: 20px; /* Add padding for space */
+        }
+    </style>
+</head>
+<body>
+    <nav class="site-navigation">
+        <ul class="nav-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="gallery.html">Photo Gallery</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="sidebar">
+        <a href="#">General Topics</a>
+        <h3 class = "sidebar-title">General Topics</h3>
+        <div class="dropdown-item">
+            <a href="#">Topic 1</a>
+            <div class="dropdown-content">
+                <a href="#">Subtopic 1.1</a>
+                <a href="#">Subtopic 1.2</a>
+            </div>
+        </div>
+        <div class="dropdown-item">
+            <a href="#">Topic 2</a>
+            <div class="dropdown-content">
+                <a href="#">Subtopic 2.1</a>
+                <a href="#">Subtopic 2.2</a>
+            </div>
+        </div>
+        <div class="dropdown-item">
+            <a href="#">Topic 3</a>
+            <div class="dropdown-content">
+                <a href="#">Subtopic 3.1</a>
+                <a href="#">Subtopic 3.2</a>
+            </div>
+        </div>
+        <a href="#">Other Links</a>
+    </div>
+
+    <div class="content">
+        <header class="hero">
+            <div class="hero-content">
+                <h1>Resources</h1>
+                <!-- Add information about club membership here -->
+            </div>
+        </header>
+
+        <main>
+            <section id="resources" class="resources-section">
+                <p>Click the links on the left to find resources for previous lessons!<br</p>
+                <p>Intro meeting slides will be posted here!<br> <br></p>
+                <p>The zoom link for meetings can be found under <strong>Other Links</strong>.</p>
+                <!-- Add details on how to become a member and membership benefits here -->
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2023 Quantum Computing Club</p>
+        </footer>
+    </div>
+</body>
+</html>
